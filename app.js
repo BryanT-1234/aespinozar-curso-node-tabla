@@ -33,6 +33,12 @@ app.get('/generic',(req,res)=>{
         titulo: 'Curso de node'
     })
 });
+app.get('/salidas',(req,res)=>{
+    res.render('salidas',{
+        nombre: 'Armando David Espinoza',
+        titulo: 'Curso de node'
+    })
+});
 
 app.get('*',(req,res)=>{
         res.sendFile(__dirname+'/public/404.html');
